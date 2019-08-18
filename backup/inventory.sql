@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 12, 2019 at 02:58 PM
+-- Generation Time: Aug 18, 2019 at 09:20 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -132,7 +132,8 @@ INSERT INTO `history_log` (`log_id`, `user_id`, `action`, `date`) VALUES
 (32, 1, 'has logged in the system at ', '2019-08-11 23:19:47'),
 (33, 1, 'added 10 of Side Mirror', '2019-08-11 23:57:31'),
 (34, 1, 'has logged in the system at ', '2019-08-12 08:08:55'),
-(35, 1, 'has logged in the system at ', '2019-08-12 20:43:05');
+(35, 1, 'has logged in the system at ', '2019-08-12 20:43:05'),
+(36, 1, 'has logged in the system at ', '2019-08-14 21:59:35');
 
 -- --------------------------------------------------------
 
@@ -239,6 +240,47 @@ INSERT INTO `sales_details` (`sales_details_id`, `sales_id`, `prod_id`, `price`,
 (4, 0, 2, '200.00', 2),
 (5, 7, 2, '400.00', 4),
 (6, 8, 2, '100.00', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `schedule`
+--
+
+CREATE TABLE `schedule` (
+  `schedule_id` int(11) NOT NULL,
+  `starttime` varchar(30) NOT NULL,
+  `enddate` date NOT NULL,
+  `service_id` int(11) NOT NULL,
+  `startdate` date NOT NULL,
+  `endtime` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `schedule`
+--
+
+INSERT INTO `schedule` (`schedule_id`, `starttime`, `enddate`, `service_id`, `startdate`, `endtime`) VALUES
+(8, '13:30', '2019-08-23', 1, '2019-08-22', '16:30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `service`
+--
+
+CREATE TABLE `service` (
+  `service_id` int(11) NOT NULL,
+  `service_name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `service`
+--
+
+INSERT INTO `service` (`service_id`, `service_name`) VALUES
+(1, 'Customization'),
+(2, 'Maintenance');
 
 -- --------------------------------------------------------
 
@@ -402,6 +444,18 @@ ALTER TABLE `sales_details`
   ADD PRIMARY KEY (`sales_details_id`);
 
 --
+-- Indexes for table `schedule`
+--
+ALTER TABLE `schedule`
+  ADD PRIMARY KEY (`schedule_id`);
+
+--
+-- Indexes for table `service`
+--
+ALTER TABLE `service`
+  ADD PRIMARY KEY (`service_id`);
+
+--
 -- Indexes for table `stockin`
 --
 ALTER TABLE `stockin`
@@ -459,7 +513,7 @@ ALTER TABLE `expense`
 -- AUTO_INCREMENT for table `history_log`
 --
 ALTER TABLE `history_log`
-  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- AUTO_INCREMENT for table `material`
 --
@@ -480,6 +534,16 @@ ALTER TABLE `sales`
 --
 ALTER TABLE `sales_details`
   MODIFY `sales_details_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `schedule`
+--
+ALTER TABLE `schedule`
+  MODIFY `schedule_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT for table `service`
+--
+ALTER TABLE `service`
+  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `stockin`
 --
