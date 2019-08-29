@@ -47,7 +47,7 @@
             
 			
             <div class="col-xs-9">
-              <div class="box box-primary">
+              <div class="box box-danger">
     
                 <div class="box-header">
                   <h3 class="box-title">User List</h3>

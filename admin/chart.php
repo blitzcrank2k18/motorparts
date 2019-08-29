@@ -31,7 +31,7 @@ include('../dist/includes/dbcon.php');
 	<title>Yearly Sales Report</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="../dist/js/highcharts.js"></script>
 	<style type="text/css">
       @media print {
           .btn-print {

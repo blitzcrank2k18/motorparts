@@ -47,21 +47,7 @@ endif;
                 </div><!-- /.box-header -->
                 <div class="box-body">
                   <div class="row">
-                      <div class="col-lg-4 col-xs-6">
-                        <!-- small box -->
-                        <div class="small-box bg-green">
-                          <div class="inner">
-                            <h3>Point of Sale</h3>
-                            <p>Sales</p>
-                          </div>
-                          <div class="icon" style="margin-top:10px">
-                            <i class="glyphicon glyphicon-share-alt"></i>
-                          </div>
-                          <a href="transaction.php" class="small-box-footer">
-                            Go <i class="fa fa-arrow-circle-right"></i>
-                          </a>
-                        </div>
-                      </div><!-- ./col -->
+                     
                       <div class="col-lg-4 col-xs-6">
                         <!-- small box -->
                         <div class="small-box bg-red">

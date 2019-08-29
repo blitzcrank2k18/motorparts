@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 18, 2019 at 09:20 AM
+-- Generation Time: Aug 29, 2019 at 09:05 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -133,7 +133,10 @@ INSERT INTO `history_log` (`log_id`, `user_id`, `action`, `date`) VALUES
 (33, 1, 'added 10 of Side Mirror', '2019-08-11 23:57:31'),
 (34, 1, 'has logged in the system at ', '2019-08-12 08:08:55'),
 (35, 1, 'has logged in the system at ', '2019-08-12 20:43:05'),
-(36, 1, 'has logged in the system at ', '2019-08-14 21:59:35');
+(36, 1, 'has logged in the system at ', '2019-08-14 21:59:35'),
+(37, 1, 'has logged in the system at ', '2019-08-25 13:55:23'),
+(38, 1, 'has logged in the system at ', '2019-08-28 11:37:07'),
+(39, 1, 'has logged in the system at ', '2019-08-29 15:02:06');
 
 -- --------------------------------------------------------
 
@@ -513,7 +516,7 @@ ALTER TABLE `expense`
 -- AUTO_INCREMENT for table `history_log`
 --
 ALTER TABLE `history_log`
-  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 --
 -- AUTO_INCREMENT for table `material`
 --
