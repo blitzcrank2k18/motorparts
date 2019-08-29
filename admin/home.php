@@ -22,7 +22,7 @@ endif;
     <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
     <style>
       .col-lg-3{
-        margin:50px 0px;
+        margin:0px 0px;
       }
       
     </style>
@@ -47,8 +47,37 @@ endif;
                 </div><!-- /.box-header -->
                 <div class="box-body">
                   <div class="row">
-                     
-                      <div class="col-lg-4 col-xs-6">
+                      <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-green">
+                          <div class="inner">
+                            <h3>Category</h3>
+                            <p>Products</p>
+                          </div>
+                          <div class="icon" style="margin-top:10px">
+                            <i class="glyphicon glyphicon-share-alt"></i>
+                          </div>
+                          <a href="category.php" class="small-box-footer">
+                            Go <i class="fa fa-arrow-circle-right"></i>
+                          </a>
+                        </div>
+                      </div><!-- ./col -->
+                      <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-blue">
+                          <div class="inner">
+                            <h3>Customer</h3>
+                            <p>Details</p>
+                          </div>
+                          <div class="icon" style="margin-top:10px">
+                            <i class="glyphicon glyphicon-share-alt"></i>
+                          </div>
+                          <a href="customer.php" class="small-box-footer">
+                            Go <i class="fa fa-arrow-circle-right"></i>
+                          </a>
+                        </div>
+                      </div><!-- ./col -->
+                      <div class="col-lg-3 col-xs-6">
                         <!-- small box -->
                         <div class="small-box bg-red">
                           <div class="inner">
@@ -63,9 +92,23 @@ endif;
                           </a>
                         </div>
                       </div><!-- ./col -->
-                      
+                      <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-orange">
+                          <div class="inner">
+                            <h3>Schedule</h3>
+                            <p>View/Add</p>
+                          </div>
+                          <div class="icon" style="margin-top:10px">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                          </div>
+                          <a href="schedule.php" class="small-box-footer">
+                            Go <i class="fa fa-arrow-circle-right"></i>
+                          </a>
+                        </div>
+                      </div><!-- ./col -->
                      
-                      <div class="col-lg-4 col-xs-6">
+                      <div class="col-lg-3 col-xs-6">
                         <!-- small box -->
                         <div class="small-box bg-orange">
                           <div class="inner">
@@ -76,6 +119,36 @@ endif;
                             <i class="glyphicon glyphicon-shopping-cart"></i>
                           </div>
                           <a href="product.php" class="small-box-footer">
+                            Go <i class="fa fa-arrow-circle-right"></i>
+                          </a>
+                        </div>
+                      </div><!-- ./col -->
+                      <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-red">
+                          <div class="inner">
+                            <h3>Supplier</h3>
+                            <p>View/Add</p>
+                          </div>
+                          <div class="icon" style="margin-top:10px">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                          </div>
+                          <a href="supplier.php" class="small-box-footer">
+                            Go <i class="fa fa-arrow-circle-right"></i>
+                          </a>
+                        </div>
+                      </div><!-- ./col -->
+                      <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-blue">
+                          <div class="inner">
+                            <h3>User</h3>
+                            <p>View/Add</p>
+                          </div>
+                          <div class="icon" style="margin-top:10px">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                          </div>
+                          <a href="user.php" class="small-box-footer">
                             Go <i class="fa fa-arrow-circle-right"></i>
                           </a>
                         </div>
