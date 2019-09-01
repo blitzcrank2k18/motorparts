@@ -29,8 +29,8 @@ include('../dist/includes/dbcon.php');
 <html>
 <head>
   <title>Yearly Sales Report</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="../dist/js/jquery.js"></script>
   <script src="../dist/js/highcharts.js"></script>
   <style type="text/css">
       @media print {
@@ -60,20 +60,24 @@ $(function () {
         title: {
             text: 'Yearly Sales Report'
         },
-        colors:'#FF530D',
+       
         xAxis: {
-            categories: data
+            categories: data,
         },
         yAxis: {
             title: {
-                text: 'Rate'
+                text: 'Rate',
             }
+            
         },
         series: [{
             name: 'Monthly Sales',
-            data: data_click
+            data: data_click,
+           
         },]
+
     });
+
 });
 
 
