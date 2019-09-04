@@ -18,10 +18,13 @@ include('../dist/includes/dbcon.php');
 
 		mysqli_query($con,"INSERT INTO sales(user_id,discount,amount_due,total,date_added,cash_tendered,cash_change) 
 	VALUES('$id','$discount','$amount_due','$total','$date','$tendered','$change')")or die(mysqli_error($con));
-		
 	
-	
-	
+		$uid=$_SESSION['id'];
+		$remarks="successfully added new sales worth $amount_due";  
+		$date = date("Y-m-d H:i:s");
+
+		mysqli_query($con,"INSERT INTO history_log(user_id,action,date) VALUES('$uid','$remarks','$date')")or die(mysqli_error($con));
+
 	$sales_id=mysqli_insert_id($con);
 	$_SESSION['sid']=$sales_id;
 	$query=mysqli_query($con,"select * from temp_trans")or die(mysqli_error($con));

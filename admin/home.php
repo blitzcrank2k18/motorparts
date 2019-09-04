@@ -62,21 +62,7 @@ endif;
                           </a>
                         </div>
                       </div><!-- ./col -->
-                      <div class="col-lg-3 col-xs-6">
-                        <!-- small box -->
-                        <div class="small-box bg-blue">
-                          <div class="inner">
-                            <h3>Customer</h3>
-                            <p>Details</p>
-                          </div>
-                          <div class="icon" style="margin-top:10px">
-                            <i class="glyphicon glyphicon-share-alt"></i>
-                          </div>
-                          <a href="customer.php" class="small-box-footer">
-                            Go <i class="fa fa-arrow-circle-right"></i>
-                          </a>
-                        </div>
-                      </div><!-- ./col -->
+                     
                       <div class="col-lg-3 col-xs-6">
                         <!-- small box -->
                         <div class="small-box bg-red">
@@ -110,7 +96,7 @@ endif;
                      
                       <div class="col-lg-3 col-xs-6">
                         <!-- small box -->
-                        <div class="small-box bg-orange">
+                        <div class="small-box bg-blue">
                           <div class="inner">
                             <h3>Products</h3>
                             <p>View/Add</p>

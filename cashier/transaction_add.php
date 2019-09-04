@@ -27,6 +27,6 @@ include('../dist/includes/dbcon.php');
 		}
 
 	
-		echo "<script>document.location='transaction.php?cid=$cid'</script>";  
+		echo "<script>document.location='transaction.php'</script>";  
 	
 ?>

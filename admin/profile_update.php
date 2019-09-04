@@ -36,6 +36,11 @@ include('../dist/includes/dbcon.php');
 					}
 					
 					$_SESSION['name']=$name;
+					$remarks="updated user details of $name";  
+					$date = date("Y-m-d H:i:s");
+
+					mysqli_query($con,"INSERT INTO history_log(user_id,action,date) VALUES('$uid','$remarks','$date')")or die(mysqli_error($con));
+
 					echo "<script type='text/javascript'>alert('Successfully updated user details!');</script>";
 					echo "<script>document.location='profile.php'</script>";  
 				}

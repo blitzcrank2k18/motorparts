@@ -4,6 +4,9 @@ header('Location:../index.php');
 endif;
 
 include('../dist/includes/dbcon.php');
+
+  $uid=$_SESSION['id'];
+  $date = date("Y-m-d H:i:s");
 	$id = $_POST['id'];
 	$name =$_POST['prod_name'];
 	$supplier =$_POST['supplier'];
@@ -42,6 +45,10 @@ include('../dist/includes/dbcon.php');
      			
 	mysqli_query($con,"update product set prod_name='$name',prod_price='$price',prod_desc='$desc',
 	reorder='$reorder',supplier_id='$supplier',cat_id='$category',prod_pic='$pic' where prod_id='$id'")or die(mysqli_error($con));
+
+      $remarks="updated product $name";  
+  
+      mysqli_query($con,"INSERT INTO history_log(user_id,action,date) VALUES('$uid','$remarks','$date')")or die(mysqli_error($con));
 	
 	echo "<script type='text/javascript'>alert('Successfully updated product details!');</script>";
 	echo "<script>document.location='product.php'</script>";  

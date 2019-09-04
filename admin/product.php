@@ -273,13 +273,14 @@ endif;
                     </tbody>
                     <tfoot>
                       <tr>
+                        <th>Picture</th>
                         <th>Product Name</th>
-						<th>Category</th>
+                        <th>Description</th>
+                        <th>Supplier</th>
                         <th>Qty</th>
-						<th>Price</th>
-						<th>Category</th>
-            
-						<th>Reorder</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Reorder</th>
                         <th>Action</th>
                       </tr>					  
                     </tfoot>

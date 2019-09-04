@@ -2,7 +2,9 @@
 session_start();
 $branch=$_SESSION['branch'];
 include('../dist/includes/dbcon.php');
-
+     
+     $uid=$_SESSION['id'];
+     $date = date("Y-m-d H:i:s");
 	$name = $_POST['prod_name'];
 	$price = $_POST['prod_price'];
 	$supplier = $_POST['supplier'];
@@ -53,6 +55,10 @@ include('../dist/includes/dbcon.php');
 			
 			mysqli_query($con,"INSERT INTO product(prod_name,prod_price,cat_id,reorder,supplier_id,prod_pic,prod_desc)
 			VALUES('$name','$price','$category','$reorder','$supplier','$pic','$desc')")or die(mysqli_error($con));
+
+               $remarks="added new product $name";  
+     
+               mysqli_query($con,"INSERT INTO history_log(user_id,action,date) VALUES('$uid','$remarks','$date')")or die(mysqli_error($con));
 
 			echo "<script type='text/javascript'>alert('Successfully added new product!');</script>";
 					  echo "<script>document.location='product.php'</script>";  

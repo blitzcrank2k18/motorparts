@@ -10,7 +10,7 @@ include('../dist/includes/dbcon.php');
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header" style="padding-left:20px">
-              <a href="home.php" class="navbar-brand"><b><i class="glyphicon glyphicon-home"></i> <?php // echo $branch_name;?> </b></a>
+              <a href="home.php" class="navbar-brand"><b></b></a>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fa fa-bars"></i>
               </button>
@@ -82,11 +82,6 @@ include('../dist/includes/dbcon.php');
 						  <li><!-- start notification -->
                             <a href="category.php">
                               <i class="glyphicon glyphicon-user text-green"></i> Category
-                            </a>
-                          </li><!-- end notification -->
-						  <li><!-- start notification -->
-                            <a href="customer.php">
-                              <i class="glyphicon glyphicon-user text-green"></i> Customer
                             </a>
                           </li><!-- end notification -->
 						  <li><!-- start notification -->
