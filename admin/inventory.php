@@ -93,7 +93,7 @@ endif;
 						
 						<td><?php echo $row['prod_price'];?></td>
 						<td><?php echo number_format($total,2);?></td>
-						<td class="text-center"><?php if ($row['prod_qty']<=$row['reorder'])echo "<span class='badge bg-red'><i class='glyphicon glyphicon-refresh'></i>Reorder</span>";?></td>
+						<td class=""><?php if ($row['prod_qty']<=$row['reorder'])echo "<span class='badge bg-red'><i class='glyphicon glyphicon-refresh'></i> Reorder</span>";?></td>
                        
                       </tr>
 

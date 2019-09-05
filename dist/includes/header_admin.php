@@ -65,7 +65,7 @@ include('../dist/includes/dbcon.php');
                           <?php }?>
                         </ul>
                       </li>
-                      <li class="footer"><a href="inventory.php">View all</a></li>
+                      <li class="footer"><a href="reorder.php">View all</a></li>
                     </ul>
                   </li>
                   <!-- Tasks Menu -->
@@ -131,7 +131,6 @@ include('../dist/includes/dbcon.php');
                     <!-- Menu toggle button -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                       <i class="glyphicon glyphicon-stats text-red"></i> Report
-                     
                     </a>
                     <ul class="dropdown-menu">
                      <li>
@@ -143,6 +142,11 @@ include('../dist/includes/dbcon.php');
                               <i class="glyphicon glyphicon-ok text-green"></i>Inventory
                             </a>
                           </li><!-- end notification -->
+                          <li><!-- start notification -->
+                            <a href="reorder.php">
+                              <i class="glyphicon glyphicon-refresh text-red"></i>Reorder
+                            </a>
+                          </li><!-- end notification -->
 						  <li><!-- start notification -->
                             <a href="sales.php">
                               <i class="glyphicon glyphicon-usd text-blue"></i>Sales
@@ -152,6 +156,11 @@ include('../dist/includes/dbcon.php');
 						  <li><!-- start notification -->
                             <a href="overall.php">
                               <i class="glyphicon glyphicon-usd text-blue"></i>Yearly Report
+                            </a>
+                          </li><!-- end notification -->
+                          <li><!-- start notification -->
+                            <a href="outofstock.php">
+                              <i class="glyphicon glyphicon-ban-circle text-red"></i>Out of Stock
                             </a>
                           </li><!-- end notification -->
                         </ul>

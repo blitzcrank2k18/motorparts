@@ -163,7 +163,7 @@
 					  <div class="form-group">
 						<label for="date">Name</label>
 						<div class="input-group col-md-12">
-						  <input type="text" class="form-control pull-right" id="date" name="name" placeholder="User Name" required>
+						  <input type="text" class="form-control pull-right" id="date" name="name" placeholder="Full Name" required>
 						</div><!-- /.input group -->
 					  </div><!-- /.form group -->
                	 <div class="form-group">
@@ -175,7 +175,7 @@
 				 <div class="form-group">
                     <label for="date">Password</label>
                     <div class="input-group col-md-12">
-                      <input type="password" class="form-control pull-right" id="date" name="password" placeholder="Contact # of Supplier" required>
+                      <input type="password" class="form-control pull-right" id="date" name="password" placeholder="Password" required>
                     </div><!-- /.input group -->
                   </div><!-- /.form group --> 
                   <div class="form-group">
