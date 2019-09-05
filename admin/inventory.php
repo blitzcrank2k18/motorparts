@@ -75,8 +75,6 @@ endif;
                         <th>Qty Left</th>
             						<th>Price</th>
             						<th>Total</th>
-            						<th>Reorder</th>
-                       
                       </tr>
                     </thead>
                     <tbody>
@@ -93,7 +91,7 @@ endif;
 						
 						<td><?php echo $row['prod_price'];?></td>
 						<td><?php echo number_format($total,2);?></td>
-						<td class=""><?php if ($row['prod_qty']<=$row['reorder'])echo "<span class='badge bg-red'><i class='glyphicon glyphicon-refresh'></i> Reorder</span>";?></td>
+						
                        
                       </tr>
 
