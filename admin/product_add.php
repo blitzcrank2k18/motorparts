@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$branch=$_SESSION['branch'];
+//$branch=$_SESSION['branch'];
 include('../dist/includes/dbcon.php');
      
      $uid=$_SESSION['id'];
@@ -10,7 +10,7 @@ include('../dist/includes/dbcon.php');
 	$supplier = $_POST['supplier'];
 	$reorder = $_POST['reorder'];
 	$category = $_POST['category'];
-	$image = $_POST['image'];
+	//$image = $_POST['image'];
      $desc = $_POST['desc'];
 
 	$pic = $_FILES["image"]["name"];
