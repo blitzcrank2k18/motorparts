@@ -91,6 +91,24 @@ endif;
                   </div><!-- /.form group -->
 		    <div class="row">
 					<div class="col-md-12">
+            <div class="form-group">
+                    <label for="date">Customer Name</label>
+                    <div class="input-group col-md-12">
+                      <input type="text" class="form-control pull-right" id="date" name="name" placeholder="Customer Name" required>
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+                  <div class="form-group">
+                    <label for="date">Contact</label>
+                    <div class="input-group col-md-12">
+                      <input type="text" class="form-control pull-right" id="date" name="contact" placeholder="Contact Number" required>
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+                  <div class="form-group">
+                    <label for="date">Motorcycle Description</label>
+                    <div class="input-group col-md-12">
+                      <textarea class="form-control pull-right" id="date" name="desc" placeholder="Motorcycle Description" required></textarea>
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
 						  <div class="form-group">
   							<label for="date">Start Date</label>
   							<div class="input-group">
@@ -160,6 +178,9 @@ endif;
                         <th>End Date</th>
 						            <th>End Time</th>
                         <th>Service</th>
+                        <th>Customer</th>
+                        <th>Contact</th>
+                        <th>Description</th>
 						            <th>Action</th>
                       </tr>
                     </thead>
@@ -177,6 +198,9 @@ endif;
 						<td><?php echo $row['enddate'];?></td>
 						<td><?php echo $row['endtime'];?></td>
 						<td><?php echo $row['service_name'];?></td>
+            <td><?php echo $row['customer'];?></td>
+            <td><?php echo $row['contact'];?></td>
+            <td><?php echo $row['description'];?></td>
                         <td>
 				<a href="#updateordinance<?php echo $row['schedule_id'];?>" data-target="#updateordinance<?php echo $row['schedule_id'];?>" data-toggle="modal" style="color:#fff;" class="small-box-footer"><i class="glyphicon glyphicon-edit text-blue"></i></a>
 			
@@ -194,8 +218,10 @@ endif;
 			  <form class="form-horizontal" method="post" action="schedule_update.php" enctype='multipart/form-data'>
                 
 				<div class="form-group">
-					<label class="control-label col-lg-3" for="name">Service</label>
-					<div class="col-lg-9"><input type="hidden" class="form-control" id="id" name="id" value="<?php echo $row['schedule_id'];?>" required>  
+					<label for="date" class="control-label col-lg-3">Customer Name</label>
+                    <div class="input-group col-md-9">
+                    
+          <input type="hidden" class="form-control" id="id" name="id" value="<?php echo $row['schedule_id'];?>" required>  
 					  <select class="form-control select2" style="width: 100%;" name="service" required>
               <option value="<?php echo $row['service_id'];?>"><?php echo $row['service_name'];?></option>
                 <?php
@@ -209,6 +235,24 @@ endif;
 					</div>
 				</div> 
         <div class="form-group">
+                    <label for="date" class="control-label col-lg-3">Customer Name</label>
+                    <div class="input-group col-md-9">
+                      <input type="text" class="form-control pull-right" id="date" name="name" placeholder="Customer Name" value="<?php echo $row['customer'];?>" required>
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+                  <div class="form-group">
+                    <label for="date" class="control-label col-lg-3">Contact</label>
+                    <div class="input-group col-md-9">
+                      <input type="text" class="form-control pull-right" id="date" name="contact" placeholder="Contact Number" value="<?php echo $row['customer'];?>" required>
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+                  <div class="form-group">
+                    <label for="date" class="control-label col-lg-3">Motorcycle Description</label>
+                    <div class="input-group col-md-9">
+                      <textarea class="form-control pull-right" id="date" name="desc" placeholder="Motorcycle Description" required><?php echo $row['description'];?></textarea>
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+              <div class="form-group">
                 <label for="date" class="control-label col-lg-3">Start Date</label>
                 <div class="input-group col-lg-9">
                   <div class="input-group-addon">
@@ -264,6 +308,9 @@ endif;
                         <th>End Date</th>
                         <th>End Time</th>
                         <th>Service</th>
+                        <th>Customer</th>
+                        <th>Contact</th>
+                        <th>Description</th>
                         <th>Action</th>
                       </tr>
                     </tfoot>

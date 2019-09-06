@@ -9,11 +9,14 @@ include('../dist/includes/dbcon.php');
 	$starttime = $_POST['starttime'];
 	$enddate = date("Y-m-d",strtotime($_POST['enddate']));
 	$endtime = $_POST['endtime'];
+	$name = $_POST['name'];
+	$contact = $_POST['contact'];
+	$desc = $_POST['desc'];
 	$uid=$_SESSION['id'];
 	$remarks="added new schedule for $startdate";  
 	$date = date("Y-m-d H:i:s");
 				
-			mysqli_query($con,"INSERT INTO schedule(service_id,startdate,starttime,enddate,endtime) VALUES('$service','$startdate','$starttime','$enddate','$endtime')")or die(mysqli_error($con));
+			mysqli_query($con,"INSERT INTO schedule(service_id,startdate,starttime,enddate,endtime,customer,contact,description) VALUES('$service','$startdate','$starttime','$enddate','$endtime','$name','$contact','$desc')")or die(mysqli_error($con));
 
 			mysqli_query($con,"INSERT INTO history_log(user_id,action,date) VALUES('$uid','$remarks','$date')")or die(mysqli_error($con));
 
