@@ -39,7 +39,7 @@ include('../dist/includes/dbcon.php');
                   <!-- Tasks Menu -->
 				          <li class="dropdown notifications-menu">
                     <!-- Menu toggle button -->
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="reorder.php" class="dropdown-toggle" data-toggle="dropdown">
                       <i class="glyphicon glyphicon-refresh text-red"></i> Reorder
                       <span class="label label-danger">
                       <?php 
@@ -66,7 +66,7 @@ include('../dist/includes/dbcon.php');
                           <?php }?>
                         </ul>
                       </li>
-                      <li class="footer"><a href="inventory.php">View all</a></li>
+                      <li class="footer"><a href="reorder.php">View all</a></li>
                     </ul>
                   </li>
                   <!-- Tasks Menu -->
