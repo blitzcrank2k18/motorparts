@@ -148,7 +148,7 @@ include('../dist/includes/dbcon.php');
                     </thead>
                     <tbody>
 <?php
-	$query=mysqli_query($con,"select * from sales natural join sales_details natural join product where date(date_added)>='$start' and date(date_added)<='$end'")or die(mysqli_error($con));
+	$query=mysqli_query($con,"select * from sales natural join sales_details natural join product where CAST(date_added as DATE) between '$start' and '$end'")or die(mysqli_error($con));
 		$qty=0;$grand=0;$discount=0;
 								while($row=mysqli_fetch_array($query)){
                   $total=$row['qty']*$row['price'];

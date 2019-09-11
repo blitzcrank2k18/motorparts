@@ -23,8 +23,6 @@ include('../dist/includes/dbcon.php');
 		$remarks="successfully added new sales worth $amount_due";  
 		$date = date("Y-m-d H:i:s");
 
-		mysqli_query($con,"INSERT INTO history_log(user_id,action,date) VALUES('$uid','$remarks','$date')")or die(mysqli_error($con));
-
 	$sales_id=mysqli_insert_id($con);
 	$_SESSION['sid']=$sales_id;
 	$query=mysqli_query($con,"select * from temp_trans")or die(mysqli_error($con));
@@ -43,5 +41,6 @@ include('../dist/includes/dbcon.php');
 		$result=mysqli_query($con,"DELETE FROM temp_trans")	or die(mysqli_error($con));
 		echo "<script>document.location='receipt.php'</script>";  	
 		
+		mysqli_query($con,"INSERT INTO history_log(user_id,action,date) VALUES('$uid','$remarks','$date')")or die(mysqli_error($con));
 	
 ?>

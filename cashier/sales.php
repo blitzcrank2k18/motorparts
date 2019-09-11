@@ -129,7 +129,7 @@ include('../dist/includes/dbcon.php');
 							<a class = "btn btn-primary btn-print" href = "transaction.php"><i class ="glyphicon glyphicon-arrow-left"></i> Back to Homepage</a>   
 						
 		
-			<table id="example1" class="table table-bordered table-striped">
+			<table id="" class="table table-bordered table-striped">
                     <thead>
                       <tr>
             						<th>Date</th>
@@ -141,7 +141,7 @@ include('../dist/includes/dbcon.php');
                     </thead>
                     <tbody>
 <?php
-	$query=mysqli_query($con,"select * from sales natural join sales_details natural join product where date(date_added)>='$start' and date(date_added)<='$end' and user_id='$id'")or die(mysqli_error($con));
+	$query=mysqli_query($con,"select * from sales natural join sales_details natural join product where CAST(date_added as DATE) between '$start' and '$end' and user_id='$id'")or die(mysqli_error($con));
 		$qty=0;$grand=0;$discount=0;
 								while($row=mysqli_fetch_array($query)){
                   $total=$row['qty']*$row['price'];
@@ -152,7 +152,7 @@ include('../dist/includes/dbcon.php');
 						<td><?php echo $row['qty'];;?></td>
             <td><?php echo $row['prod_name'];?></td>
 						<td><?php echo $row['price'];?></td>
-            <td style="text-align:right"><?php echo number_format($row['total'],2);
+            <td style=""><?php echo number_format($row['total'],2);
 								}?></td>
 			
 		
@@ -167,7 +167,7 @@ include('../dist/includes/dbcon.php');
 						<th></th>
 						<th></th>
 						<th></th>
-            <th style="text-align:right;"><?php echo  number_format($grand,2);}?></th>
+            <th style=""><?php echo  number_format($grand,2);}?></th>
 			    </tr>					  
         
         </tfoot>
