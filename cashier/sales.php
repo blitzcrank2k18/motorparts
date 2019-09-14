@@ -43,7 +43,7 @@ endif;
 <script type="text/javascript" src="../plugins/daterangepicker/daterangepicker.js"></script>
 <link rel="stylesheet" type="text/css" href="../plugins/daterangepicker/daterangepicker.css" />
     <style type="text/css">
-      h5,h6{
+      h3,h5,h6{
         text-align:center;
       }
 		
@@ -122,7 +122,10 @@ include('../dist/includes/dbcon.php');
 
 ?>      
                   
-                  
+          <h3>HIGHWAY MOTORPARTS</h3>       
+          <h5>WILSON I. BERMEO-Prop.</h5>       
+          <h5>NON-VAT Reg. TIN: 167-700-096-000</h5>       
+          <h5>Manapla Public Market, Manapla, Neg. Occ.</h5><br>        
 				  <h5><b>Sales Report as of <?php echo date("M d, Y",strtotime($start))." to ".date("M d, Y",strtotime($end));?></b></h5>
                   
 				  <a class = "btn btn-success btn-print" href = "" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Print</a>

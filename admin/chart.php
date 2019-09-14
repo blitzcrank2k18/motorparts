@@ -33,6 +33,9 @@ include('../dist/includes/dbcon.php');
   <script type="text/javascript" src="../dist/js/jquery.js"></script>
   <script src="../dist/js/highcharts.js"></script>
   <style type="text/css">
+      h3,h5,h6{
+        text-align: center;
+      }
       @media print {
           .btn-print {
             display:none !important;
@@ -58,7 +61,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'Yearly Sales Report'
+            text: ''
         },
        
         xAxis: {
@@ -86,8 +89,12 @@ $(function () {
 
 <div class="container">
   <br/>
-  <h2 class="text-center">Yearly Sales Report for <?php echo $year;?>
-   <input class="btn-print btn-warning" type="button" name="print" value="Print" onclick="window.print();window.location.href='home.php';">            </h2>
+  <h3>HIGHWAY MOTORPARTS</h3>       
+          <h5>WILSON I. BERMEO-Prop.</h5>       
+          <h5>NON-VAT Reg. TIN: 167-700-096-000</h5>       
+          <h5>Manapla Public Market, Manapla, Neg. Occ.</h5><br>
+  <h5 class="text-center">Yearly Sales Report for <?php echo $year;?>
+   <input class="btn-print btn-warning" type="button" name="print" value="Print" onclick="window.print();window.location.href='home.php';">            </h5>
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">

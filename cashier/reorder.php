@@ -20,7 +20,7 @@ endif;
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
     <style type="text/css">
-      h5,h6{
+      h3,h5,h6{
         text-align:center;
       }
 		
@@ -43,7 +43,7 @@ endif;
   <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
   <body class="hold-transition skin-<?php echo $_SESSION['skin'];?> layout-top-nav">
     <div class="wrapper">
-      <?php include('../dist/includes/header_admin.php');
+      <?php include('../dist/includes/header.php');
       include('../dist/includes/dbcon.php');
       ?>
       <!-- Full Width Column -->
@@ -60,7 +60,10 @@ endif;
 					
               
                 <div class="box-body"> 
-                 
+          <h3>HIGHWAY MOTORPARTS</h3>       
+          <h5>WILSON I. BERMEO-Prop.</h5>       
+          <h5>NON-VAT Reg. TIN: 167-700-096-000</h5>       
+          <h5>Manapla Public Market, Manapla, Neg. Occ.</h5><br>       
 				  <h5><b>Reorder List as of today, <?php echo date("M d, Y h:i a");?></b></h5>
                   
 				  <a class = "btn btn-success btn-print" href = "" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Print</a>

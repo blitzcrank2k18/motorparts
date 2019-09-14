@@ -23,7 +23,7 @@ endif;
     <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
     
     <style type="text/css">
-      h5,h6{
+      h3,h5,h6{
         text-align:center;
       }
 
@@ -60,8 +60,10 @@ include('../dist/includes/dbcon.php');
 
         
 ?>			
-                  <h2 style="text-align: center;">Company Name</h2>
-                  <h5 style="font-weight: bolder;">Contact #: 09091234567</h5>
+                  <h3>HIGHWAY MOTORPARTS</h3>       
+          <h5>WILSON I. BERMEO-Prop.</h5>       
+          <h5>NON-VAT Reg. TIN: 167-700-096-000</h5>       
+          <h5>Manapla Public Market, Manapla, Neg. Occ.</h5><br>
                   <h6 style="font-weight: bolder;">Date <?php echo date("M d, Y");?> Time <?php echo date("h:i A");?></h6>
                   <hr>
                    <table class="table">

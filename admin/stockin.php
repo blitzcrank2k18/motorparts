@@ -105,8 +105,8 @@ endif;
                       <tr>
                         <th>Product Name</th>
                         <th>Qty</th>
-				        <th>Supplier</th>
-				        <th>Date Delivered</th>
+				                <th>Supplier</th>
+				                <th>Date Delivered</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -121,8 +121,49 @@ endif;
                         <td><?php echo $row['stockin_qty'];?></td>
             						<td><?php echo $row['supplier_name'];?></td>
             						<td><?php echo $row['stockin_date'];?></td>
-                      
+                        <td>
+                          <a href="#updateordinance<?php echo $row['stockin_id'];?>" data-target="#updateordinance<?php echo $row['stockin_id'];?>" data-toggle="modal" style="color:#fff;" class="small-box-footer"><i class="glyphicon glyphicon-edit text-blue"></i></a>
+                        </td>
                       </tr>
+<div id="updateordinance<?php echo $row['stockin_id'];?>" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height:auto">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Update Stockin Details</h4>
+              </div>
+              <div class="modal-body">
+        <form class="form-horizontal" method="post" action="stockin_update.php" enctype='multipart/form-data'>
+                
+        <div class="form-group">
+          <label class="control-label col-lg-3" for="name">Product Name</label>
+          <div class="col-lg-9">
+            <input type="hidden" class="form-control" id="id" name="id" value="<?php echo $row['stockin_id'];?>" required> 
+            <input type="hidden" class="form-control" id="id" name="prod_id" value="<?php echo $row['prod_id'];?>" required>  
+            <input type="text" class="form-control" id="name" name="prod_name" value="<?php echo $row['prod_name'];?>" readonly>  
+          </div>
+        </div> 
+        <div class="form-group">
+          <label class="control-label col-lg-3" for="price">Stockin Qty</label>
+          <div class="col-lg-9">
+            <input type="hidden" class="form-control" id="price" name="qty_old" value="<?php echo $row['stockin_qty'];?>" required>  
+            <input type="number" class="form-control" id="price" name="qty" value="<?php echo $row['stockin_qty'];?>" required>  
+          </div>
+        </div>
+        
+       
+              </div><br><br><br><br><br><br><br>
+              <div class="modal-footer">
+    <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+        </form>
+            </div>
+      
+        </div><!--end of modal-dialog-->
+ </div>
+ <!--end of modal-->                                          
                    
 <?php }?>					  
                     </tbody>
