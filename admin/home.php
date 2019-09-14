@@ -67,7 +67,7 @@ endif;
                         <!-- small box -->
                         <div class="small-box bg-red">
                           <div class="inner">
-                            <h3>Stockin</h3>
+                            <h3>Stock in</h3>
                             <p>Products</p>
                           </div>
                           <div class="icon" style="margin-top:10px">

@@ -9,7 +9,7 @@ endif;
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Product | <?php include('../dist/includes/title.php');?></title>
+    <title>Product Stock In| <?php include('../dist/includes/title.php');?></title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -40,7 +40,7 @@ endif;
             </h1>
             <ol class="breadcrumb">
               <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-              <li class="active">Product</li>
+              <li class="active">Product Stock In</li>
             </ol>
           </section>
 
@@ -50,7 +50,7 @@ endif;
 	      <div class="col-md-4">
               <div class="box box-primary">
                 <div class="box-header">
-                  <h3 class="box-title">Stockin Products</h3>
+                  <h3 class="box-title">Stock in Products</h3>
                 </div>
                 <div class="box-body">
                   <!-- Date range -->
@@ -97,7 +97,7 @@ endif;
               <div class="box box-primary">
     
                 <div class="box-header">
-                  <h3 class="box-title">Product Stockin List</h3>
+                  <h3 class="box-title">Product Stock in List</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                   <table id="example1" class="table table-bordered table-striped">
@@ -131,7 +131,7 @@ endif;
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span></button>
-                <h4 class="modal-title">Update Stockin Details</h4>
+                <h4 class="modal-title">Update Stock in Details</h4>
               </div>
               <div class="modal-body">
         <form class="form-horizontal" method="post" action="stockin_update.php" enctype='multipart/form-data'>
@@ -145,7 +145,7 @@ endif;
           </div>
         </div> 
         <div class="form-group">
-          <label class="control-label col-lg-3" for="price">Stockin Qty</label>
+          <label class="control-label col-lg-3" for="price">Stock in Qty</label>
           <div class="col-lg-9">
             <input type="hidden" class="form-control" id="price" name="qty_old" value="<?php echo $row['stockin_qty'];?>" required>  
             <input type="number" class="form-control" id="price" name="qty" value="<?php echo $row['stockin_qty'];?>" required>  

@@ -117,7 +117,7 @@ include('../dist/includes/dbcon.php');
 				   <li class="dropdown notifications-menu">
                     <!-- Menu toggle button -->
                     <a href="stockin.php">
-                      <i class="glyphicon glyphicon-list text-green"></i> Stockin
+                      <i class="glyphicon glyphicon-list text-green"></i> Stock in
                       
                     </a>
                     <ul class="dropdown-menu">
