@@ -126,7 +126,7 @@ include('../dist/includes/dbcon.php');
     //     $row=mysqli_fetch_array($query);
         
 ?>      
-            <h3>HIGHWAY MOTORPARTS</h3>       
+            <h3>HIGHWAY MOTOR PARTS</h3>       
           <h5>WILSON I. BERMEO-Prop.</h5>       
           <h5>NON-VAT Reg. TIN: 167-700-096-000</h5>       
           <h5>Manapla Public Market, Manapla, Neg. Occ.</h5><br>
