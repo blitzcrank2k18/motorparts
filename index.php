@@ -28,7 +28,7 @@
    
     <div class="login-box">
       <div class="login-logo">
-        <b>Highway Motor Parts Sales and Inventory System</b>
+        <b>Highway Motor Parts Sales and Inventory Management System</b>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
