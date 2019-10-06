@@ -14,7 +14,7 @@ include('../dist/includes/dbcon.php');
 		$price=$row['prod_price'];
 		$prod_qty=$row['prod_qty'];
 		
-		if ($qty>=$prod_qty)
+		if ($qty<=$prod_qty)
 		{
 			$query1=mysqli_query($con,"select * from temp_trans where prod_id='$name'")or die(mysqli_error());
 			$count=mysqli_num_rows($query1);
