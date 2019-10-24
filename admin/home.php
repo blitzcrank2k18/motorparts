@@ -62,7 +62,36 @@ endif;
                           </a>
                         </div>
                       </div><!-- ./col -->
-                     
+                     <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-red">
+                          <div class="inner">
+                            <h3>Supplier</h3>
+                            <p>View/Add</p>
+                          </div>
+                          <div class="icon" style="margin-top:10px">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                          </div>
+                          <a href="supplier.php" class="small-box-footer">
+                            Go <i class="fa fa-arrow-circle-right"></i>
+                          </a>
+                        </div>
+                      </div><!-- ./col -->
+                      <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-blue">
+                          <div class="inner">
+                            <h3>Products</h3>
+                            <p>View/Add</p>
+                          </div>
+                          <div class="icon" style="margin-top:10px">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                          </div>
+                          <a href="product.php" class="small-box-footer">
+                            Go <i class="fa fa-arrow-circle-right"></i>
+                          </a>
+                        </div>
+                      </div><!-- ./col -->
                       <div class="col-lg-3 col-xs-6">
                         <!-- small box -->
                         <div class="small-box bg-red">
@@ -94,36 +123,7 @@ endif;
                         </div>
                       </div><!-- ./col -->
                      
-                      <div class="col-lg-3 col-xs-6">
-                        <!-- small box -->
-                        <div class="small-box bg-blue">
-                          <div class="inner">
-                            <h3>Products</h3>
-                            <p>View/Add</p>
-                          </div>
-                          <div class="icon" style="margin-top:10px">
-                            <i class="glyphicon glyphicon-shopping-cart"></i>
-                          </div>
-                          <a href="product.php" class="small-box-footer">
-                            Go <i class="fa fa-arrow-circle-right"></i>
-                          </a>
-                        </div>
-                      </div><!-- ./col -->
-                      <div class="col-lg-3 col-xs-6">
-                        <!-- small box -->
-                        <div class="small-box bg-red">
-                          <div class="inner">
-                            <h3>Supplier</h3>
-                            <p>View/Add</p>
-                          </div>
-                          <div class="icon" style="margin-top:10px">
-                            <i class="glyphicon glyphicon-shopping-cart"></i>
-                          </div>
-                          <a href="supplier.php" class="small-box-footer">
-                            Go <i class="fa fa-arrow-circle-right"></i>
-                          </a>
-                        </div>
-                      </div><!-- ./col -->
+                     
                       <div class="col-lg-3 col-xs-6">
                         <!-- small box -->
                         <div class="small-box bg-blue">
