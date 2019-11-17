@@ -60,7 +60,8 @@ endif;
 					
               
                 <div class="box-body"> 
-          <h3>HIGHWAY MOTOR PARTS</h3>       
+                  
+          <h3>HIGHWAY MOTOR PARTS<img src="../dist/img/logo.jpg" style="height: 100px;float: right;position:absolute;margin-left: 100px"></h3>       
           <h5>WILSON I. BERMEO-Prop.</h5>       
           <h5>NON-VAT Reg. TIN: 167-700-096-000</h5>       
           <h5>Manapla Public Market, Manapla, Neg. Occ.</h5><br>       
@@ -112,7 +113,9 @@ endif;
                         
                       </tr>					  
                     </tfoot>
-                  </table>
+                  </table><br><br>
+                  Prepared by: <br><br>
+                    Mark Joven S. Polvorido
                 </div><!-- /.box-body -->
 
 	      </div><!-- /.box -->

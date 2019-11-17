@@ -60,11 +60,13 @@ include('../dist/includes/dbcon.php');
 
         
 ?>			
-                  <h3>HIGHWAY MOTOR PARTS</h3>       
+
+          <h3>HIGHWAY MOTOR PARTS<img src="../dist/img/logo.jpg" style="height: 100px;float: right;position:absolute;margin-left: 100px"></h3>       
           <h5>WILSON I. BERMEO-Prop.</h5>       
           <h5>NON-VAT Reg. TIN: 167-700-096-000</h5>       
           <h5>Manapla Public Market, Manapla, Neg. Occ.</h5><br>
-                  <h6 style="font-weight: bolder;">Date <?php echo date("M d, Y");?> Time <?php echo date("h:i A");?></h6>
+          <h6 style="font-weight: bolder;">Date <?php echo date("M d, Y");?> Time <?php echo date("h:i A");?></h6>
+
                   <hr>
                    <table class="table">
                     <thead>
@@ -146,8 +148,14 @@ include('../dist/includes/dbcon.php');
                         <td style="text-align:right"><b><?php echo number_format($change,2);?></b></td>
                       </tr>  
                     </tbody>
-                    
+                      <tr>
+                      <td colspan="2"></td>
+                      <td colspan="2"><br><br>
+       Prepared by: <br><br>
+       Mark Joven S. Polvorido  </td>
+                    </tr>       
                   </table>
+                   
                 </div><!-- /.box-body -->
 				</div>  
 				</form>	

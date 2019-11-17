@@ -126,7 +126,7 @@ include('../dist/includes/dbcon.php');
     //     $row=mysqli_fetch_array($query);
         
 ?>      
-            <h3>HIGHWAY MOTOR PARTS</h3>       
+            <h3>HIGHWAY MOTOR PARTS<img src="../dist/img/logo.jpg" style="height: 100px;float: right;position:absolute;margin-left: 100px"></h3>       
           <h5>WILSON I. BERMEO-Prop.</h5>       
           <h5>NON-VAT Reg. TIN: 167-700-096-000</h5>       
           <h5>Manapla Public Market, Manapla, Neg. Occ.</h5><br>
@@ -160,7 +160,7 @@ include('../dist/includes/dbcon.php');
 						<td><?php echo $row['qty'];;?></td>
             <td><?php echo $row['prod_name'];?></td>
 						<td><?php echo $row['price'];?></td>
-            <td style="text-align:right"><?php echo number_format($row['total'],2);
+            <td style=""><?php echo number_format($row['total'],2);
 								}?></td>
 			
 		
@@ -175,7 +175,7 @@ include('../dist/includes/dbcon.php');
 						<th></th>
 						<th></th>
 						<th></th>
-            <th style="text-align:right;"><?php echo  number_format($grand,2);}?></th>
+            <th><?php echo  number_format($grand,2);}?></th>
 			    </tr>					  
 <?php
   $query=mysqli_query($con,"select SUM(balance) as balance from customer")or die(mysqli_error($con));
@@ -188,10 +188,17 @@ include('../dist/includes/dbcon.php');
             <th></th>
             <th></th>
             <th></th>
-            <th style="text-align:right;"><?php //echo  number_format($receivables,2);?></th>
+            <th><?php //echo  number_format($receivables,2);?></th>
           </tr>           
+          <tr>
+                      <td colspan="3"></td>
+                      <td colspan="2"><br><br>
+       Prepared by: <br><br>
+       Mark Joven S. Polvorido  </td>
+                    </tr>
         </tfoot>
        </table>
+
 		</div>
             
           </section><!-- /.content -->

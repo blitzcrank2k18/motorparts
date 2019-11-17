@@ -27,15 +27,62 @@ include('../dist/includes/dbcon.php');
                       Home
                     </a>
                   </li>
-    
-				  <li class="">
+                  <li class="">
                     <!-- Menu Toggle Button -->
-                    <a href="log.php" class="dropdown-toggle">
-                      <i class="glyphicon glyphicon-list-alt"></i>
-                      History Log
+                    <a href="profile.php" class="dropdown-toggle">
+                      <i class="glyphicon glyphicon-cog text-orange"></i>
+                      <?php echo $_SESSION['name'];?>
                     </a>
                   </li>
-                  <!-- Notifications Menu -->
+                  <!-- Tasks Menu -->
+                  <li class="dropdown notifications-menu">
+                    <!-- Menu toggle button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="glyphicon glyphicon-wrench"></i> Transaction
+                      
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <!-- Inner Menu: contains the notifications -->
+                        <ul class="menu">
+                          <li><!-- start notification -->
+                            <a href="category.php">
+                              <i class="glyphicon glyphicon-user text-green"></i> Category
+                            </a>
+                          </li><!-- end notification -->
+                          <li><!-- start notification -->
+                            <a href="supplier.php">
+                              <i class="glyphicon glyphicon-send text-green"></i> Supplier
+                            </a>
+                          </li><!-- end notification -->
+                          <li><!-- start notification -->
+                            <a href="product.php">
+                              <i class="glyphicon glyphicon-cutlery text-green"></i> Products
+                            </a>
+                          </li><!-- end notification -->
+                          <li><!-- start notification -->
+                            <a href="stockin.php">
+                              <i class="glyphicon glyphicon-send text-green"></i> Stockin
+                            </a>
+                          </li><!-- end notification -->
+                          <li><!-- start notification -->
+                            <a href="schedule.php">
+                              <i class="glyphicon glyphicon-send text-green"></i> Schedule
+                            </a>
+                          </li><!-- end notification -->
+                          
+                          <li><!-- start notification -->
+                            <a href="user.php">
+                              <i class="glyphicon glyphicon-user text-green"></i> User
+                            </a>
+                          </li><!-- end notification -->
+                        </ul>
+                      </li>
+                     
+                    </ul>
+                  </li>
+                  <!-- Tasks Menu -->
+				          
                   <li class="dropdown notifications-menu">
                     <!-- Menu toggle button -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -68,66 +115,10 @@ include('../dist/includes/dbcon.php');
                       <li class="footer"><a href="reorder.php">View all</a></li>
                     </ul>
                   </li>
+                  
+				   
                   <!-- Tasks Menu -->
-				   <li class="dropdown notifications-menu">
-                    <!-- Menu toggle button -->
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <i class="glyphicon glyphicon-wrench"></i> Maintenance
-                      
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <!-- Inner Menu: contains the notifications -->
-                        <ul class="menu">
-						  <li><!-- start notification -->
-                            <a href="category.php">
-                              <i class="glyphicon glyphicon-user text-green"></i> Category
-                            </a>
-                          </li><!-- end notification -->
-						  <li><!-- start notification -->
-                            <a href="product.php">
-                              <i class="glyphicon glyphicon-cutlery text-green"></i> Product
-                            </a>
-                          </li><!-- end notification -->
-						  <li><!-- start notification -->
-                            <a href="schedule.php">
-                              <i class="glyphicon glyphicon-send text-green"></i> Schedule
-                            </a>
-                          </li><!-- end notification -->
-              <li><!-- start notification -->
-                            <a href="supplier.php">
-                              <i class="glyphicon glyphicon-send text-green"></i> Supplier
-                            </a>
-                          </li><!-- end notification -->
-              
-              
-						             
-						  <li><!-- start notification -->
-                            <a href="user.php">
-                              <i class="glyphicon glyphicon-user text-green"></i> User
-                            </a>
-                          </li><!-- end notification -->
-                        </ul>
-                      </li>
-                     
-                    </ul>
-                  </li>
-                  <!-- Tasks Menu -->
-				   <!-- Tasks Menu -->
-				   <li class="dropdown notifications-menu">
-                    <!-- Menu toggle button -->
-                    <a href="stockin.php">
-                      <i class="glyphicon glyphicon-list text-green"></i> Stock in
-                      
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                      </li>
-                     
-                    </ul>
-                  </li>
-                  <!-- Tasks Menu -->
-				   <li class="dropdown notifications-menu">
+				          <li class="dropdown notifications-menu">
                     <!-- Menu toggle button -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                       <i class="glyphicon glyphicon-stats text-red"></i> Report
@@ -168,13 +159,14 @@ include('../dist/includes/dbcon.php');
                     </ul>
                   </li>
                   <!-- Tasks Menu -->
-				  <li class="">
+				          <li class="">
                     <!-- Menu Toggle Button -->
-                    <a href="profile.php" class="dropdown-toggle">
-                      <i class="glyphicon glyphicon-cog text-orange"></i>
-                      <?php echo $_SESSION['name'];?>
+                    <a href="log.php" class="dropdown-toggle">
+                      <i class="glyphicon glyphicon-list-alt"></i>
+                      History Log
                     </a>
                   </li>
+                  <!-- Notifications Menu -->
                   <li class="">
                     <!-- Menu Toggle Button -->
                     <a href="logout.php" class="dropdown-toggle">

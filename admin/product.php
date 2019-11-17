@@ -153,12 +153,12 @@ endif;
                     <thead>
                       <tr>
                         <th>Picture</th>
+                        <th>Category</th>
                         <th>Product Name</th>
                         <th>Description</th>
 						            <th>Supplier</th>
                         <th>Qty</th>
 						            <th>Price</th>
-						            <th>Category</th>
 						            <th>Reorder</th>
                         <th>Action</th>
                       </tr>
@@ -172,13 +172,13 @@ endif;
 ?>
                       <tr>
                       	<td><img style="width: 50px;height: 50px" src="../dist/uploads/<?php echo $row['prod_pic'];?>"></td>
+                        <td><?php echo $row['cat_name'];?></td>
                         <td><?php echo $row['prod_name'];?></td>
                         <td><?php echo $row['prod_desc'];?></td>
-						<td><?php echo $row['supplier_name'];?></td>
+						            <td><?php echo $row['supplier_name'];?></td>
                         <td><?php echo $row['prod_qty'];?></td>
-						<td><?php echo $row['prod_price'];?></td>
-						<td><?php echo $row['cat_name'];?></td>
-						<td><?php echo $row['reorder'];?></td>
+            						<td><?php echo $row['prod_price'];?></td>
+            						<td><?php echo $row['reorder'];?></td>
                         <td>
 				<a href="#updateordinance<?php echo $row['prod_id'];?>" data-target="#updateordinance<?php echo $row['prod_id'];?>" data-toggle="modal" style="color:#fff;" class="small-box-footer"><i class="glyphicon glyphicon-edit text-blue"></i></a>
 			

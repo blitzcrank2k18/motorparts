@@ -24,11 +24,11 @@
     <![endif]-->
   </head>
   <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-  <body class="hold-transition login-page">
-   
+  <body class="hold-transition" style="background-image: url('dist/img/bg.jpg')!important;background-repeat: no-repeat;background-position: center;background-size: 100%">
+    <br><br><br><br><br><br><br><br><br><br>
     <div class="login-box">
       <div class="login-logo">
-        <b>Highway Motor Parts Sales and Inventory Management System</b>
+        <b></b>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
