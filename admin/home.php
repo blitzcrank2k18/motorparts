@@ -99,7 +99,7 @@ endif;
                           </div>
                         </a>
                       </div><!-- ./col -->
-                      
+                      <a href="stockin.php">
                       <div class="col-lg-4 col-xs-6">
                         <!-- small box -->
                         <div class="small-box" style="background-color: #ffcc00">
@@ -107,13 +107,10 @@ endif;
                             <h3>Stock in</h3>
                             <p>Products</p>
                           </div>
-                          <a href="stockin.php">
-                          <div class="icon" style="margin-top:10px">
-                          </div>
-                          </a>
+                         
                         </div>
                       </div><!-- ./col -->
-                     
+                      </a>
                      
                       <div class="col-lg-4 col-xs-6">
                         <!-- small box -->
